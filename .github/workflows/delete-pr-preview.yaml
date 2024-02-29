@@ -36,7 +36,7 @@ jobs:
         uses: loft-sh/setup-loft@v2
         with:
           version: v3.3.3
-          url: https://REPLACE_LOFT_DEMO_DOMAIN
+          url: https://writer.us.demo.dev
           # Specify your Loft access key here
           access-key: ${{ secrets.LOFT_DEMO_ENV_ACCESS_KEY }}
           kubectl-install: false

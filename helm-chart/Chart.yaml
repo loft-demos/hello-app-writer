@@ -1,5 +1,5 @@
 apiVersion: v2
-name: REPO_NAME
+name: hello-app-writer
 description: A Helm chart for simple echo app
 # A chart can be either an 'application' or a 'library' chart.
 #

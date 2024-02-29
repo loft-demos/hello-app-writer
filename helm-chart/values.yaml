@@ -4,7 +4,7 @@
 
 replicaCount: 1
 image:
-  repository: ghcr.io/loft-demos/REPO_NAME
+  repository: ghcr.io/loft-demos/hello-app-writer
   pullPolicy: IfNotPresent
   # use Chart appVersion if not set as value
   tag: ""
@@ -48,18 +48,18 @@ ingress:
     nginx.ingress.kubernetes.io/ssl-passthrough: 'false'
     nginx.ingress.kubernetes.io/backend-protocol: 'HTTP'
   hosts:
-    - host: REPO_NAME-REPLACE_LOFT_DEMO_DOMAIN
+    - host: hello-app-writer-writer.us.demo.dev
       paths:
         - backend:
             service:
-              name: REPO_NAME
+              name: hello-app-writer
               port:
                 name: HTTP
           path: /
           pathType: Prefix
   tls:
     - hosts:
-        - REPO_NAME-REPLACE_LOFT_DEMO_DOMAIN
+        - hello-app-writer-writer.us.demo.dev
 resources:
   limits:
     cpu: 200m

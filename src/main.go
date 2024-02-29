@@ -62,3 +62,4 @@ func TextHandler(c *gin.Context) {
 	c.String(http.StatusOK, *text)
 }
 
+
